@@ -1,0 +1,22 @@
+<mat-sidenav-container class="app-sidenav-container">
+  <mat-sidenav #sidenav [mode]="isSmallScreen() ? 'over' : 'side'" [opened]="!isSmallScreen()" class="app-sidenav">
+    <div class="side-nav-content">
+      <nav class="nav">
+        <a>Home</a>
+        <a>Cart</a>
+        <a>Orders</a>
+      </nav>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content class="app-main-content">
+    <div class="main-wrapper">
+      <div class="content-header">
+        <i class="material-icons hamburger" (click)="sidenav.toggle()">list</i>
+        <h2> E-Commerce</h2>
+      </div>
+      <div class="main-content">
+        main content will go here
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
