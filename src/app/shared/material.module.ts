@@ -5,7 +5,11 @@ import {
   MatSidenavModule,
   MatSliderModule,
   MatSlideToggleModule,
-  MatIconModule
+  MatIconModule,
+  MatGridListModule,
+  MatCardModule,
+  MatButtonModule,
+  MatListModule
 
 } from '@angular/material';
 
@@ -15,7 +19,11 @@ import {
     MatSidenavModule,
     MatSliderModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule,
+    MatCardModule,
+    MatButtonModule,
+    MatListModule
   ]
 })
 export class MaterialModule { }

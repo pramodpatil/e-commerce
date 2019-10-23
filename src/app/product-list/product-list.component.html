@@ -1,0 +1,7 @@
+<mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)">
+  <mat-grid-tile *ngFor="let productObj of productList" >
+    <img src="{{productObj.imagePath}}" alt="Product Name"/>
+    <mat-card>{{productObj.title}}</mat-card>
+    <mat-card>{{productObj.price}}</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
