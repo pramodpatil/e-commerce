@@ -18,10 +18,17 @@
             a {
                 display: block;
                 padding: 10px 5px 10px 10px;
-                background: #838383;
+                background: #464646;
                 margin: 1px 0 0 0;
                 cursor: pointer;
+                text-decoration: none;
+                color: #fff;
             }
+            a.active {
+                color: #000;
+                background: #fff;
+            }
+
         }
     }
     .top-bar {
@@ -29,6 +36,10 @@
     }
     .app-main-content {
         width: 100%;
+
+        .title {
+            margin: 10px;
+        }
 
         .main-wrapper {            
             display: flex;
@@ -60,7 +71,7 @@
             }
             .main-content  {
                 flex: 1;
-                padding: 20px;
+                padding: 20px;                
             }
         }
     }

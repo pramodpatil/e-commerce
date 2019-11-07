@@ -20,7 +20,6 @@ export class LayoutComponent implements OnInit {
   }
 
   isSmallScreen () {
-    console.log(this.mediaMatcher.matches)
     return this.mediaMatcher.matches;
   }
 }

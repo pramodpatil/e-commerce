@@ -2,9 +2,9 @@
   <mat-sidenav #sidenav [mode]="isSmallScreen() ? 'over' : 'side'" [opened]="!isSmallScreen()" class="app-sidenav">
     <div class="side-nav-content">
       <nav class="nav">
-        <a>Home</a>
-        <a>Cart</a>
-        <a>Orders</a>
+        <a routerLink="/products" routerLinkActive="active">Home</a>
+        <a routerLink="/shopping-cart" routerLinkActive="active">Cart</a>
+        <a routerLink="/orders" routerLinkActive="active">Orders</a>
       </nav>
     </div>
   </mat-sidenav>
@@ -12,10 +12,11 @@
     <div class="main-wrapper">
       <div class="content-header">
         <i class="material-icons hamburger" (click)="sidenav.toggle()">list</i>
-        <h2> E-Commerce</h2>
+        <h1 class="title"> E-Commerce</h1>
       </div>
       <div class="main-content">
-        <app-product-list></app-product-list>
+        <router-outlet></router-outlet>
+        <!-- <app-product-list></app-product-list> -->
       </div>
     </div>
   </mat-sidenav-content>
