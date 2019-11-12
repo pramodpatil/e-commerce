@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Xiomi Mi 8",
+    "price": 25000,
+    "imagePath": "/assets/images/Mi8.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Oppo K3",
+    "price": 16000,
+    "imagePath": "/assets/images/OppoK3.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Samsung Galaxy S8",
+    "price": 53000,
+    "imagePath": "/assets/images/SamsungGalaxyS8.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Vivo V11 Pro",
+    "price": 13500,
+    "imagePath": "/assets/images/VivoV11Pro.jpg"
+  }
+]
