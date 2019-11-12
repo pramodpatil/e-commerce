@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../models/products';
+import { LocalstorageService } from '../services/localstorage/localstorage.service';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingCartComponent implements OnInit {
 
-  constructor() { }
+  cartItems: Product[];
+  displayedColumns: string[] = ['imagePath', 'title', 'price'];
+  dataSource;
+
+  constructor(private localstorageService: LocalstorageService) { }
 
   ngOnInit() {
+    this.cartItems = this.localstorageService.getCartItems();
+    this.dataSource = this.cartItems;
   }
 
 }
+

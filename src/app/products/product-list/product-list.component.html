@@ -1,0 +1,7 @@
+<div class="header">
+  <h3>Product List</h3>
+  <a mat-button routerLink="/shopping-cart">Go To Cart</a>
+</div>
+<div class="card-list">
+  <app-product *ngFor="let prod of productList" [product]="prod"></app-product>
+</div>

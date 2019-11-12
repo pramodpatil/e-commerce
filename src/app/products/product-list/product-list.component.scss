@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex: 1;
+
+  h3 {
+    width: 100%;
+  }
+  h3, a {
+    margin: auto;
+  }
+  
+}
+.card-list {
+  display: flex;
+  flex: 1;
+
+  @media screen and (max-width: 600px) {
+      flex-direction: column;
+  }
+}
+
