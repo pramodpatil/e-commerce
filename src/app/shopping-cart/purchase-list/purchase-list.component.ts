@@ -19,8 +19,8 @@ export class PurchaseListComponent implements OnInit {
     title = 'Purchase List';
     dataSource;
     displayedColumns: string[] = ['imagePath', 'title', 'price'];
-    /*
-    displayedColumns: string[] = ['imagePath', 'title', 'price'];
+    
+    
     
 
     constructor(private localstorageService: LocalstorageService) { }
@@ -30,15 +30,15 @@ export class PurchaseListComponent implements OnInit {
         this.dataSource = this.Products;
     }
 
-   */
+   
 
-    constructor(private httpService: HttpClient) {}
+   /* constructor(private httpService: HttpClient) {}
 
     ngOnInit() {
         this.sum = 0;
         this.httpService.get('./assets/mock/Products.json').subscribe(
             data => {
-                /*this.Products = data as Product[];*/
+                *//*this.Products = data as Product[];*//*
                 this.dataSource = data as Product[];
                
             },
@@ -47,7 +47,7 @@ export class PurchaseListComponent implements OnInit {
                 console.log(err.message);
             }
         );
-    }
+    }*/
 
     purchase() {
         this.showMsg = true;
