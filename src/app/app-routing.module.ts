@@ -7,10 +7,11 @@ import { PurchaseListComponent } from './shopping-cart/purchase-list/purchase-li
 
 const routes: Routes = [
   { path: 'products', component: ProductListComponent },
-  { path: 'shopping-cart', component: ShoppingCartComponent },
+    { path: 'shopping-cart', component: ShoppingCartComponent },
+    { path: 'purchase-list', component: PurchaseListComponent },
   { path: 'order-summary', loadChildren: './order-summary/order-summary.module#OrderSummaryModule'}, 
-    { path: '', redirectTo: 'products', pathMatch: 'full' },
-  { path: 'purchase-list', component: PurchaseListComponent },
+    { path: '', redirectTo: 'products', pathMatch: 'full' }
+  
 ];
 
 @NgModule({

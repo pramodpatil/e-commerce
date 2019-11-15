@@ -27,8 +27,8 @@ export class LocalstorageService {
   }
 
   emptyStorage(key) {
-    this.storeCartData = [];
-    localStorage.removeItem(key);
+      this.storeCartData = [];
+      localStorage.removeItem('cart-items');
   }
 
   removeFromCart(id: number) {
